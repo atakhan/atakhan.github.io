@@ -304,4 +304,31 @@
 
         objectLightBox = null;
     });
+    
+    
+    var masonryUpdate = function() {
+        setTimeout(function() {
+            $('#container').masonry();
+        }, 500);
+    }
+    // My Script
+    $('#loadMore').on( 'click', function(e) {
+        e.preventDefault();
+        $('.mbr-gallery-item__hided').slice(0,5).removeClass('mbr-gallery-item__hided');
+        var $msnr = $('.mbr-gallery-row').masonry({
+            itemSelector: '.mbr-gallery-item:not(.mbr-gallery-item__hided)',
+            percentPosition: true,
+            horizontalOrder: true
+        });
+        $msnr.masonry('reloadItems');
+    });
+
+    function reloadDocumentBody(){
+        var container = document.getElementById("documentBody");
+        var content = container.innerHTML;
+        container.innerHTML= content; 
+        
+       //this line is to watch the result in console , you can remove it later  
+        console.log("Refreshed");
+    }
 }(jQuery));
