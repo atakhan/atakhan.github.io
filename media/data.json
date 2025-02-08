@@ -1,0 +1,699 @@
+[
+    {
+        "label": "Go Bootcamp",
+        "projectsList":[
+            "APG1_Backend",
+            "APG1_Bootcamp"
+        ]
+    },
+    {
+        "label": "AP JavaScript - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_JavaScript",
+            "AP4_Info21 v2.0 Web_JavaScript ",
+            "AP3_SpecialtyCoffee_JavaScript"
+        ]
+    },
+    {
+        "label": "AP Swift - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_Swift",
+            "AP4_Info21 v2.0 Web_Swift ",
+            "AP3_SpecialtyCoffee_Swift"
+        ]
+    },
+    {
+        "label": "AP Kotlin - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_Kotlin",
+            "AP4_Info21 v2.0 Web_Kotlin ",
+            "AP3_SpecialtyCoffee_Kotlin "
+        ]
+    },
+    {
+        "label": "Cybersecurity",
+        "projectsList":[
+            "CbS8_Crypto_symmetric",
+            "CbS7_Crypto_intro",
+            "CbS6_Windows_basics",
+            "CbS5_Linux_basics",
+            "CbS4_Networking_basics_Part 4",
+            "CbS3_Networking_basics_Part 3",
+            "CbS2_Networking_basics_Part 2",
+            "CbS1_Networking_basics_Part 1"
+        ]
+    },
+    {
+        "label": "Java Sber",
+        "projectsList":[
+            "Project Reliability"
+        ]
+    },
+    {
+        "label": "Mobile Swift",
+        "projectsList":[
+            "MS7_Test",
+            "MS6_Additional",
+            "MS5_Maps",
+            "MS4_Data storage",
+            "MS3_Networking",
+            "MS2_SwiftUI",
+            "MS1_UIKit",
+            "Mobile Swift 02",
+            "Mobile Swift 01"
+        ]
+    },
+    {
+        "label": "Mobile Kotlin",
+        "projectsList":[
+            "MK8_Compose",
+            "MK7_Gradle",
+            "MK6_Test",
+            "MK5_OpenGL_AndroidNDK",
+            "MK4_Notification_RemoteView",
+            "MK3_CustomView_Animations",
+            "MK2_Async_operations",
+            "MK1_Activity",
+            "Mobile Kotlin 02",
+            "Mobile Kotlin 01",
+            "Mobile Kotlin 03"
+        ]
+    },
+    {
+        "label": "DO - III",
+        "projectsList":[
+            "DevOps. Project 14",
+            "DevOps. Project 13",
+            "DevOps. Project 12",
+            "DevOps. Project 11",
+            "DevOps. Project 10",
+            "DevOps. Project 9",
+            "DevOps. Project 8",
+            "DevOps. Project 7"
+        ]
+    },
+    {
+        "label": "Game Development - I",
+        "projectsList":[
+            "Game development. Project 7",
+            "Game development. Project 6",
+            "Game development. Project 5",
+            "Game development. Project 4",
+            "Game development. Project 3",
+            "Game development. Project 2",
+            "Game development. Project 1"
+        ]
+    },
+    {
+        "label": "BSA - I",
+        "projectsList":[
+            "BSA04_Domains",
+            "BSA03_HowToRequirements",
+            "BSA02_Requirements",
+            "BSA01_Stakeholders",
+            "BSA00_Decomposition"
+        ]
+    },
+    {
+        "label": "BSA - II",
+        "projectsList":[
+            "BSA11_UserInterfaces",
+            "BSA10_FunctionalRequirements",
+            "BSA09_Objects_and_Roles",
+            "BSA08_UseCase",
+            "BSA07_UserStory",
+            "BSA06_BPMN",
+            "BSA05_Diagrams"
+        ]
+    },
+    {
+        "label": "BSA - III",
+        "projectsList":[
+            "BSA16_SOAP",
+            "BSA15_REST",
+            "BSA14_SystemIntegration",
+            "BSA13_RequirementsManagements",
+            "BSA12_NonfunctionalRequirements"
+        ]
+    },
+    {
+        "label": "Software Architecture - I",
+        "projectsList":[
+            "Software architecture. Project 6",
+            "Software architecture. Project 5",
+            "Software architecture. Project 4",
+            "Software architecture. Project 3",
+            "Software architecture. Project 2",
+            "Software architecture. Project 1"
+        ]
+    },
+    {
+        "label": "Backend - I",
+        "projectsList":[
+            "Backend. Project 6",
+            "Backend. Project 5",
+            "Backend. Project 4",
+            "Backend. Project 3",
+            "Backend. Project 2",
+            "Backend. Project 1"
+        ]
+    },
+    {
+        "label": "Data Science - II",
+        "projectsList":[
+            "DS. Project 08. Fried Eggs",
+            "DS. Project 07. Amazon",
+            "DS. Project 06. City life",
+            "DS. Project 05. Uber",
+            "DS. Project 04. Understanding customer",
+            "DS. Project 03. MySpotify",
+            "DS. Project 02. Churn prediction",
+            "DS. Project 01. Tweets"
+        ]
+    },
+    {
+        "label": "DS in Healthcare",
+        "projectsList":[
+            "DS Healthcare. Project 06",
+            "DS Healthcare. Project 05",
+            "DS Healthcare. Project 04",
+            "DS Healthcare. Project 03",
+            "DS Healthcare. Project 02",
+            "DS Healthcare. Project 01 "
+        ]
+    },
+    {
+        "label": "Machine Learning - I",
+        "projectsList":[
+            "Machine learning. Project 12",
+            "Machine learning. Project 11",
+            "Machine learning. Project 10",
+            "Machine learning. Project 9",
+            "Machine learning. Project 8",
+            "Machine learning. Project 7",
+            "Machine learning. Project 6",
+            "Machine learning. Project 5",
+            "Machine learning. Project 4",
+            "Machine learning. Project 3",
+            "Machine learning. Project 2",
+            "Machine learning. Project 1"
+        ]
+    },
+    {
+        "label": "AP Java - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_Java",
+            "SmartCalc_v4.0_Web_Java",
+            "AP4_Info21 v2.0 Web_Java ",
+            "AP3_SpecialtyCoffee_Java"
+        ]
+    },
+    {
+        "label": "AP Go - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_Go",
+            "SmartCalc_v4.0_Web_Go",
+            "AP4_Info21 v2.0 Web_Go",
+            "AP3_SpecialtyCoffee_Go"
+        ]
+    },
+    {
+        "label": "AP Python - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_Python",
+            "SmartCalc_v4.0_Web_Python",
+            "AP4_Info21 v2.0 Web_Python ",
+            "AP3_SpecialtyCoffee_Python"
+        ]
+    },
+    {
+        "label": "AP C# - II",
+        "projectsList":[
+            "AP6_RetailAnalitycs v2.0 Web_C#",
+            "SmartCalc v4.0 Web C#",
+            "AP4_Info21 v2.0 Web_C#",
+            "AP3_SpecialtyCoffee_C#"
+        ]
+    },
+    {
+        "label": "Frontend",
+        "projectsList":[
+            "Frontend. Project 8",
+            "Frontend. Project 7",
+            "Frontend. Project 6",
+            "Frontend. Project 5",
+            "Frontend. Project 4",
+            "Frontend. Project 3",
+            "Frontend. Project 2",
+            "Frontend. Project 1"
+        ]
+    },
+    {
+        "label": "CPP - III",
+        "projectsList":[
+            "MonitoringSystem",
+            "PhotoLab_v1.0",
+            "MLP",
+            "3DViewer_v2.2",
+            "3DViewer_v2.1"
+        ]
+    },
+    {
+        "label": "Internship",
+        "projectsList":[
+            "Internship"
+        ]
+    },
+    {
+        "label": "Career Track",
+        "projectsList":[
+            "Career track"
+        ]
+    },
+    {
+        "label": "Swift Bootcamp - II Mobile",
+        "projectsList":[
+            "APS1_Mobile"
+        ]
+    },
+    {
+        "label": "Swift Bootcamp - II Backend",
+        "projectsList":[
+            "APS1_Backend"
+        ]
+    },
+    {
+        "label": "Swift Bootcamp - I",
+        "projectsList":[
+            "APS1_Bootcamp"
+        ]
+    },
+    {
+        "label": "Kotlin Bootcamp - II Mobile",
+        "projectsList":[
+            "APK1_Mobile"
+        ]
+    },
+    {
+        "label": "Kotlin Bootcamp - II Backend",
+        "projectsList":[
+            "APK1_Backend"
+        ]
+    },
+    {
+        "label": "Kotlin Bootcamp - I",
+        "projectsList":[
+            "APK1_Bootcamp"
+        ]
+    },
+    {
+        "label": "JS Bootcamp - II Frontend",
+        "projectsList":[
+            "APJS1_Frontend"
+        ]
+    },
+    {
+        "label": "JS Bootcamp - II Backend",
+        "projectsList":[
+            "APJS1_Backend"
+        ]
+    },
+    {
+        "label": "JS Bootcamp - I",
+        "projectsList":[
+            "APJS1_Bootcamp"
+        ]
+    },
+    {
+        "label": "Java Bootcamp - I",
+        "projectsList":[
+            "APJ1_Bootcamp"
+        ]
+    },
+    {
+        "label": "Java Bootcamp - II Mobile",
+        "projectsList":[
+            "APJ1_Mobile"
+        ]
+    },
+    {
+        "label": "Java Bootcamp - II Backend",
+        "projectsList":[
+            "APJ1_Backend"
+        ]
+    },
+    {
+        "label": "C# Bootcamp",
+        "projectsList":[
+            "APC1_Backend",
+            "APC1_Bootcamp"
+        ]
+    },
+    {
+        "label": "Python Bootcamp ",
+        "projectsList":[
+            "APP1_Backend",
+            "APP1_Bootcamp"
+        ]
+    },
+    {
+        "label": "Algorithms Ex",
+        "projectsList":[
+            "A_Ex"
+        ]
+    },
+    {
+        "label": "Algorithms Swift",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_Swift",
+            "A1_Maze_Swift"
+        ]
+    },
+    {
+        "label": "Algorithms Kotlin",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_Kotlin",
+            "A1_Maze_Kotlin"
+        ]
+    },
+    {
+        "label": "Algorithms JavaScript",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_JavaScript",
+            "A1_Maze_JavaScript"
+        ]
+    },
+    {
+        "label": "Algoritms Java",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_Java",
+            "A1_Maze_Java"
+        ]
+    },
+    {
+        "label": "Algorithms C#",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_C#",
+            "A1_Maze_C#"
+        ]
+    },
+    {
+        "label": "Algorithms Go",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_Go",
+            "A1_Maze_Go"
+        ]
+    },
+    {
+        "label": "Algorithms Python",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_Python",
+            "A1_Maze_Python"
+        ]
+    },
+    {
+        "label": "Algorithms CPP",
+        "projectsList":[
+            "A2_SimpleNavigator_v1.0_CPP",
+            "A1_Maze_CPP"
+        ]
+    },
+    {
+        "label": "AP2 Go",
+        "projectsList":[
+            "AP2_BrickGame_v3.0_Go"
+        ]
+    },
+    {
+        "label": "AP2 Swift",
+        "projectsList":[
+            "APS_Ex",
+            "AP2_BrickGame_v3.0_Swift"
+        ]
+    },
+    {
+        "label": "AP2 Kotlin",
+        "projectsList":[
+            "APK_Ex",
+            "AP2_BrickGame_v3.0_Kotlin"
+        ]
+    },
+    {
+        "label": "AP2 JavaScript",
+        "projectsList":[
+            "APJS_Ex",
+            "AP2_BrickGame_v3.0_JavaScript"
+        ]
+    },
+    {
+        "label": "AP2 Java",
+        "projectsList":[
+            "APJ_Ex",
+            "AP2_BrickGame_v3.0_Java"
+        ]
+    },
+    {
+        "label": "AP2 C#",
+        "projectsList":[
+            "APC#_Ex",
+            "AP2_BrickGame_v3.0_C#"
+        ]
+    },
+    {
+        "label": "AP2 Python",
+        "projectsList":[
+            "APP_Ex",
+            "AP2_BrickGame_v3.0_Python"
+        ]
+    },
+    {
+        "label": "CPP - I",
+        "projectsList":[
+            "CPP_Ex",
+            "3DViewer_v2.0",
+            "CPP3_BrickGame_v2.0",
+            "s21_containers",
+            "s21_matrix+"
+        ]
+    },
+    {
+        "label": "SQL - I",
+        "projectsList":[
+            "SQL_Ex",
+            "SQL1"
+        ]
+    },
+    {
+        "label": "DO - I",
+        "projectsList":[
+            "DO_Ex-t",
+            "DO6_CICD",
+            "DO5_SimpleDocker",
+            "DO2_Linux Network",
+            "DO1_Linux"
+        ]
+    },
+    {
+        "label": "C - I",
+        "projectsList":[
+            "C_Ex",
+            "C7_BrickGame_v1.0",
+            "s21_matrix ",
+            "s21_decimal",
+            "s21_string+",
+            "SimpleBashUtils"
+        ]
+    },
+    {
+        "label": "Algorithms - JS",
+        "projectsList":[
+            "A8_Algorithmic_trading_JavaScript",
+            "A7_DNA_Analyzer_JavaScript",
+            "A6_Transactions_JavaScript",
+            "A4_Crypto_JavaScript",
+            "A3_Parallels_JavaScript"
+        ]
+    },
+    {
+        "label": "Algorithms- Kotlin",
+        "projectsList":[
+            "A8_Algorithmic_trading_Kotlin",
+            "A7_DNA_Analyzer_Kotlin",
+            "A6_Transactions_Kotlin",
+            "A4_Crypto_Kotlin",
+            "A3_Parallels_Kotlin"
+        ]
+    },
+    {
+        "label": "Algorithms - Swift",
+        "projectsList":[
+            "A8_Algorithmic_trading_Swift",
+            "A7_DNA_Analyzer_Swift",
+            "A6_Transactions_Swift",
+            "A4_Crypto_Swift",
+            "A3_Parallels_Swift"
+        ]
+    },
+    {
+        "label": "Algorithms - C#",
+        "projectsList":[
+            "A8_Algorithmic_trading_C#",
+            "A7_DNA_Analyzer_C#",
+            "A6_Transactions_C#",
+            "A4_Crypto_C#",
+            "A3_Parallels_C#"
+        ]
+    },
+    {
+        "label": "Algorithms - Go",
+        "projectsList":[
+            "A8_Algorithmic_trading_Go",
+            "A7_DNA_Analyzer_Go",
+            "A6_Transactions_Go",
+            "A4_Crypto_Go",
+            "A3_Parallels_Go"
+        ]
+    },
+    {
+        "label": "Algorithms - Java",
+        "projectsList":[
+            "A8_Algorithmic_trading_Java",
+            "A7_DNA_Analyzer_Java",
+            "A6_Transactions_Java",
+            "A4_Crypto_Java",
+            "A3_Parallels_Java"
+        ]
+    },
+    {
+        "label": "Algorithms - Python",
+        "projectsList":[
+            "A8_Algorithmic_trading_Python",
+            "A7_DNA_Analyzer_Python",
+            "A6_Transactions_Python",
+            "A4_Crypto_Python",
+            "A3_Parallels_Python"
+        ]
+    },
+    {
+        "label": "Algorithms - CPP",
+        "projectsList":[
+            "A8_Algorithmic_trading_CPP",
+            "A7_DNA_Analyzer_CPP",
+            "A6_Transactions_CPP",
+            "A5_s21_memory_CPP",
+            "A4_Crypto_CPP",
+            "A3_Parallels_CPP"
+        ]
+    },
+    {
+        "label": "Robotics",
+        "projectsList":[
+            "Electrical Engineering Bootcamp",
+            "ROS Bootcamp"
+        ]
+    },
+    {
+        "label": "Data Science - I",
+        "projectsList":[
+            "Data Science Bootcamp"
+        ]
+    },
+    {
+        "label": "DataBases - I",
+        "projectsList":[
+            "DB Bootcamp"
+        ]
+    },
+    {
+        "label": "DO - II",
+        "projectsList":[
+            "DO4_LinuxMonitoring v2.0",
+            "DO3_LinuxMonitoring v1.0"
+        ]
+    },
+    {
+        "label": "C - II",
+        "projectsList":[
+            "3DViewer_v1.0",
+            "s21_math"
+        ]
+    },
+    {
+        "label": "SQL - II",
+        "projectsList":[
+            "RetailAnalytics v1.0",
+            "Info21 v1.0"
+        ]
+    }
+]
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
