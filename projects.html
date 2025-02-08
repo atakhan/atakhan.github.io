@@ -34,7 +34,12 @@
             display: none;
         }
         .badge {
-            margin-left: 5px;
+            margin: 3px;
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            max-height: 200px;
+            overflow-y: auto;
         }
     </style>
 </head>
@@ -44,12 +49,23 @@
 
 <!-- Фильтр по языкам -->
 <div class="mb-3">
-    <label for="langFilter" class="form-label">Фильтр по языку (можно выбрать несколько):</label>
-    <select id="langFilter" class="form-select" multiple onchange="applyFilter()">
-    </select>
-</div>
+    <label class="form-label">Фильтр по языку (можно выбрать несколько):</label>
 
-<button class="btn btn-warning mb-3" onclick="resetFilter()">Сбросить фильтр</button>
+    <div class="dropdown">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            Выбрать технологии
+        </button>
+        <ul class="dropdown-menu" id="langFilterDropdown">
+            <!-- Чекбоксы с технологиями появятся тут -->
+        </ul>
+    </div>
+
+    <!-- Бейджики с выбранными технологиями -->
+    <div id="selectedFilters" class="mt-2"></div>
+
+    <button class="btn btn-primary mt-2" onclick="applyFilter()">Искать</button>
+    <button class="btn btn-warning mt-2" onclick="resetFilter()">Сбросить</button>
+</div>
 
 <div class="mb-3">
     <button class="btn btn-primary me-2" onclick="expandAll()">Раскрыть все</button>
@@ -59,7 +75,7 @@
 <ul id="treeContainer" class="tree list-group"></ul>
 
 <script>
-    let jsonData = []; // Глобальная переменная для хранения загруженных данных
+    let jsonData = [];
 
     async function loadData() {
         try {
@@ -76,22 +92,46 @@
     function populateFilter(data) {
         const langSet = new Set();
         data.forEach(item => item.lang.forEach(lang => langSet.add(lang)));
-        
-        const filterSelect = document.getElementById("langFilter");
+
+        const dropdown = document.getElementById("langFilterDropdown");
+        dropdown.innerHTML = ""; // Очистка списка
+
         langSet.forEach(lang => {
-            const option = document.createElement("option");
-            option.value = lang;
-            option.textContent = lang.toUpperCase();
-            filterSelect.appendChild(option);
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <label class="dropdown-item">
+                    <input type="checkbox" value="${lang}" onchange="toggleBadge('${lang}')"> ${lang.toUpperCase()}
+                </label>`;
+            dropdown.appendChild(li);
         });
     }
 
+    function toggleBadge(lang) {
+        const selectedFilters = document.getElementById("selectedFilters");
+        const existingBadge = document.getElementById(`badge-${lang}`);
+
+        if (existingBadge) {
+            existingBadge.remove(); // Удаление бейджа, если чекбокс снят
+        } else {
+            const badge = document.createElement("span");
+            badge.classList.add("badge", "bg-info", "text-dark");
+            badge.id = `badge-${lang}`;
+            badge.innerHTML = `${lang.toUpperCase()} <i class="fas fa-times" onclick="removeBadge('${lang}')"></i>`;
+            selectedFilters.appendChild(badge);
+        }
+    }
+
+    function removeBadge(lang) {
+        document.getElementById(`badge-${lang}`).remove();
+        document.querySelector(`input[value="${lang}"]`).checked = false; // Снимаем чекбокс
+    }
+
     function createTree(data, container) {
-        container.innerHTML = ""; // Очистка перед перерисовкой
+        container.innerHTML = "";
         data.forEach(item => {
             const li = document.createElement("li");
             li.classList.add("list-group-item");
-            li.dataset.lang = item.lang.join(","); // Сохранение языков для фильтрации
+            li.dataset.lang = item.lang.join(",");
 
             const node = document.createElement("span");
             node.classList.add("node");
@@ -121,7 +161,7 @@
     }
 
     function generateLangBadges(langs) {
-        return langs.map(lang => `<span class="badge bg-info text-dark">${lang.toUpperCase()}</span>`).join(" ");
+        return langs.map(lang => `<span class="badge bg-secondary">${lang.toUpperCase()}</span>`).join(" ");
     }
 
     function expandAll() {
@@ -141,33 +181,36 @@
     }
 
     function applyFilter() {
-        const selectedOptions = Array.from(document.getElementById("langFilter").selectedOptions).map(opt => opt.value);
+        const selectedLangs = Array.from(document.querySelectorAll("#selectedFilters .badge"))
+            .map(badge => badge.id.replace("badge-", ""));
 
-        document.querySelectorAll("#treeContainer > li").forEach(li => {
+        document.querySelectorAll("#treeContainer li").forEach(li => {
             const langData = li.dataset.lang ? li.dataset.lang.split(",") : [];
-            
-            // Проверяем, есть ли пересечение языков проекта с выбранными фильтрами
-            const isVisible = selectedOptions.length === 0 || selectedOptions.some(lang => langData.includes(lang));
+            const isVisible = selectedLangs.length === 0 || selectedLangs.some(lang => langData.includes(lang));
 
             li.style.display = isVisible ? "" : "none";
-            
-            // Автораскрытие списка проектов, если узел видимый
+
             const icon = li.querySelector(".node i");
             const projectList = li.querySelector("ul");
 
-            if (isVisible && projectList) {
-                projectList.classList.remove("hidden"); // Раскрываем проекты
-                icon.classList.remove("fa-chevron-right");
-                icon.classList.add("fa-chevron-down");
+            if (projectList) {
+                if (isVisible) {
+                    projectList.classList.remove("hidden");
+                    icon.classList.remove("fa-chevron-right");
+                    icon.classList.add("fa-chevron-down");
+                } else {
+                    projectList.classList.add("hidden");
+                    icon.classList.remove("fa-chevron-down");
+                    icon.classList.add("fa-chevron-right");
+                }
             }
         });
     }
 
-
-    // Функция для сброса фильтра
     function resetFilter() {
-        document.getElementById("langFilter").selectedIndex = -1; // Сбрасываем выбор
-        applyFilter(); // Применяем фильтр заново
+        document.getElementById("selectedFilters").innerHTML = "";
+        document.querySelectorAll("#langFilterDropdown input").forEach(input => input.checked = false);
+        applyFilter();
     }
 
     loadData();
