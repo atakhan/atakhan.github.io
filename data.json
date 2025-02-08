@@ -405,7 +405,7 @@
     },
     {
         "label": "Algorithms Swift",
-        "lang": "swift",
+        "lang": ["swift"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_Swift",
             "A1_Maze_Swift"
@@ -413,7 +413,7 @@
     },
     {
         "label": "Algorithms Kotlin",
-        "lang": "kotlin",
+        "lang": ["kotlin"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_Kotlin",
             "A1_Maze_Kotlin"
@@ -421,7 +421,7 @@
     },
     {
         "label": "Algorithms JavaScript",
-        "lang": "javascript",
+        "lang": ["javascript"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_JavaScript",
             "A1_Maze_JavaScript"
@@ -429,7 +429,7 @@
     },
     {
         "label": "Algoritms Java",
-        "lang": "java",
+        "lang": ["java"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_Java",
             "A1_Maze_Java"
@@ -437,7 +437,7 @@
     },
     {
         "label": "Algorithms C#",
-        "lang": "c#",
+        "lang": ["c#"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_C#",
             "A1_Maze_C#"
@@ -445,7 +445,7 @@
     },
     {
         "label": "Algorithms Go",
-        "lang": "go",
+        "lang": ["go"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_Go",
             "A1_Maze_Go"
@@ -453,7 +453,7 @@
     },
     {
         "label": "Algorithms Python",
-        "lang": "python",
+        "lang": ["python"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_Python",
             "A1_Maze_Python"
@@ -461,7 +461,7 @@
     },
     {
         "label": "Algorithms CPP",
-        "lang": "c++",
+        "lang": ["c++"],
         "projectsList":[
             "A2_SimpleNavigator_v1.0_CPP",
             "A1_Maze_CPP"
@@ -469,14 +469,14 @@
     },
     {
         "label": "AP2 Go",
-        "lang": "go",
+        "lang": ["go"],
         "projectsList":[
             "AP2_BrickGame_v3.0_Go"
         ]
     },
     {
         "label": "AP2 Swift",
-        "lang": "swift",
+        "lang": ["swift"],
         "projectsList":[
             "APS_Ex",
             "AP2_BrickGame_v3.0_Swift"
@@ -484,7 +484,7 @@
     },
     {
         "label": "AP2 Kotlin",
-        "lang": "kotlin",
+        "lang": ["kotlin"],
         "projectsList":[
             "APK_Ex",
             "AP2_BrickGame_v3.0_Kotlin"
@@ -492,7 +492,7 @@
     },
     {
         "label": "AP2 JavaScript",
-        "lang": "javascript",
+        "lang": ["javascript"],
         "projectsList":[
             "APJS_Ex",
             "AP2_BrickGame_v3.0_JavaScript"
@@ -500,7 +500,7 @@
     },
     {
         "label": "AP2 Java",
-        "lang": "java",
+        "lang": ["java"],
         "projectsList":[
             "APJ_Ex",
             "AP2_BrickGame_v3.0_Java"
@@ -508,7 +508,7 @@
     },
     {
         "label": "AP2 C#",
-        "lang": "c#",
+        "lang": ["c#"],
         "projectsList":[
             "APC#_Ex",
             "AP2_BrickGame_v3.0_C#"
@@ -516,7 +516,7 @@
     },
     {
         "label": "AP2 Python",
-        "lang": "python",
+        "lang": ["python"],
         "projectsList":[
             "APP_Ex",
             "AP2_BrickGame_v3.0_Python"
@@ -524,7 +524,7 @@
     },
     {
         "label": "CPP - I",
-        "lang": "c++",
+        "lang": ["c++"],
         "projectsList":[
             "CPP_Ex",
             "3DViewer_v2.0",
@@ -535,7 +535,7 @@
     },
     {
         "label": "SQL - I",
-        "lang": "sql",
+        "lang": ["sql"],
         "projectsList":[
             "SQL_Ex",
             "SQL1"
@@ -543,7 +543,7 @@
     },
     {
         "label": "DO - I",
-        "lang": "bash",
+        "lang": ["bash"],
         "projectsList":[
             "DO_Ex-t",
             "DO6_CICD",
@@ -554,7 +554,7 @@
     },
     {
         "label": "C - I",
-        "lang": "c",
+        "lang": ["c"],
         "projectsList":[
             "C_Ex",
             "C7_BrickGame_v1.0",
@@ -566,7 +566,7 @@
     },
     {
         "label": "Algorithms - JS",
-        "lang": "javascript",
+        "lang": ["javascript"],
         "projectsList":[
             "A8_Algorithmic_trading_JavaScript",
             "A7_DNA_Analyzer_JavaScript",
@@ -577,7 +577,7 @@
     },
     {
         "label": "Algorithms- Kotlin",
-        "lang": "kotlin",
+        "lang": ["kotlin"],
         "projectsList":[
             "A8_Algorithmic_trading_Kotlin",
             "A7_DNA_Analyzer_Kotlin",
@@ -588,7 +588,7 @@
     },
     {
         "label": "Algorithms - Swift",
-        "lang": "swift",
+        "lang": ["swift"],
         "projectsList":[
             "A8_Algorithmic_trading_Swift",
             "A7_DNA_Analyzer_Swift",
@@ -599,7 +599,7 @@
     },
     {
         "label": "Algorithms - C#",
-        "lang": "c#",
+        "lang": ["c#"],
         "projectsList":[
             "A8_Algorithmic_trading_C#",
             "A7_DNA_Analyzer_C#",
@@ -610,7 +610,7 @@
     },
     {
         "label": "Algorithms - Go",
-        "lang": "go",
+        "lang": ["go"],
         "projectsList":[
             "A8_Algorithmic_trading_Go",
             "A7_DNA_Analyzer_Go",
@@ -621,7 +621,7 @@
     },
     {
         "label": "Algorithms - Java",
-        "lang": "java",
+        "lang": ["java"],
         "projectsList":[
             "A8_Algorithmic_trading_Java",
             "A7_DNA_Analyzer_Java",
@@ -632,7 +632,7 @@
     },
     {
         "label": "Algorithms - Python",
-        "lang": "python",
+        "lang": ["python"],
         "projectsList":[
             "A8_Algorithmic_trading_Python",
             "A7_DNA_Analyzer_Python",
@@ -643,7 +643,7 @@
     },
     {
         "label": "Algorithms - CPP",
-        "lang": "c++",
+        "lang": ["c++"],
         "projectsList":[
             "A8_Algorithmic_trading_CPP",
             "A7_DNA_Analyzer_CPP",
@@ -655,7 +655,7 @@
     },
     {
         "label": "Robotics",
-        "lang": "c",
+        "lang": ["c"],
         "projectsList":[
             "Electrical Engineering Bootcamp",
             "ROS Bootcamp"
@@ -663,21 +663,21 @@
     },
     {
         "label": "Data Science - I",
-        "lang": "python",
+        "lang": ["python"],
         "projectsList":[
             "Data Science Bootcamp"
         ]
     },
     {
         "label": "DataBases - I",
-        "lang": "sql",
+        "lang": ["sql"],
         "projectsList":[
             "DB Bootcamp"
         ]
     },
     {
         "label": "DO - II",
-        "lang": "bash",
+        "lang": ["bash"],
         "projectsList":[
             "DO4_LinuxMonitoring v2.0",
             "DO3_LinuxMonitoring v1.0"
@@ -685,7 +685,7 @@
     },
     {
         "label": "C - II",
-        "lang": "c",
+        "lang": ["c"],
         "projectsList":[
             "3DViewer_v1.0",
             "s21_math"
@@ -693,7 +693,7 @@
     },
     {
         "label": "SQL - II",
-        "lang": "sql",
+        "lang": ["sql"],
         "projectsList":[
             "RetailAnalytics v1.0",
             "Info21 v1.0"
