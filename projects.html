@@ -142,13 +142,15 @@
     function applyFilter() {
         const selectedLang = document.getElementById("langFilter").value;
         document.querySelectorAll("#treeContainer li").forEach(li => {
-            if (selectedLang === "all" || li.dataset.lang.includes(selectedLang)) {
+            const langData = li.dataset.lang ? li.dataset.lang.split(",") : []; // Преобразуем строку в массив
+            if (selectedLang === "all" || langData.includes(selectedLang)) {
                 li.style.display = "";
             } else {
                 li.style.display = "none";
             }
         });
     }
+
 
     loadData();
 </script>
