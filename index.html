@@ -34,52 +34,16 @@
 <ul id="treeContainer" class="tree"></ul>
 
 <script>
-    const jsonData = [
-        {
-            "label": "Go Bootcamp",
-            "projectsList": [
-                "APG1_Backend",
-                "APG1_Bootcamp"
-            ]
-        },
-        {
-            "label": "AP JavaScript - II",
-            "projectsList": [
-                "AP6_RetailAnalitycs v2.0 Web_JavaScript",
-                "AP4_Info21 v2.0 Web_JavaScript",
-                "AP3_SpecialtyCoffee_JavaScript"
-            ]
-        },
-        {
-            "label": "AP Swift - II",
-            "projectsList": [
-                "AP6_RetailAnalitycs v2.0 Web_Swift",
-                "AP4_Info21 v2.0 Web_Swift",
-                "AP3_SpecialtyCoffee_Swift"
-            ]
-        },
-        {
-            "label": "AP Kotlin - II",
-            "projectsList": [
-                "AP6_RetailAnalitycs v2.0 Web_Kotlin",
-                "AP4_Info21 v2.0 Web_Kotlin",
-                "AP3_SpecialtyCoffee_Kotlin"
-            ]
-        },
-        {
-            "label": "Cybersecurity",
-            "projectsList": [
-                "CbS8_Crypto_symmetric",
-                "CbS7_Crypto_intro",
-                "CbS6_Windows_basics",
-                "CbS5_Linux_basics",
-                "CbS4_Networking_basics_Part 4",
-                "CbS3_Networking_basics_Part 3",
-                "CbS2_Networking_basics_Part 2",
-                "CbS1_Networking_basics_Part 1"
-            ]
+    async function loadData() {
+        try {
+            const response = await fetch("data.json");
+            if (!response.ok) throw new Error("Ошибка загрузки JSON");
+            const jsonData = await response.json();
+            createTree(jsonData, document.getElementById("treeContainer"));
+        } catch (error) {
+            console.error("Ошибка:", error);
         }
-    ];
+    }
 
     function createTree(data, container) {
         data.forEach(item => {
@@ -108,8 +72,7 @@
         });
     }
 
-    const treeContainer = document.getElementById("treeContainer");
-    createTree(jsonData, treeContainer);
+    loadData();
 </script>
 
 </body>
