@@ -3,700 +3,699 @@
         "label": "Go Bootcamp",
         "lang": ["go"],
         "projectsList":[
-            "APG1_Backend",
-            "APG1_Bootcamp"
+            {"projectId": 177, "projectName": "APG1_Backend"},
+            {"projectId": 169, "projectName": "APG1_Bootcamp"}
         ]
     },
     {
         "label": "AP JavaScript - II",
         "lang": ["javascript"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_JavaScript",
-            "AP4_Info21 v2.0 Web_JavaScript ",
-            "AP3_SpecialtyCoffee_JavaScript"
+            {"projectId": 72013, "projectName": "AP6_RetailAnalitycs v2.0 Web_JavaScript"},
+            {"projectId": 72006, "projectName": "AP4_Info21 v2.0 Web_JavaScript "},
+            {"projectId": 72164, "projectName": "AP3_SpecialtyCoffee_JavaScript"}
         ]
     },
     {
         "label": "AP Swift - II",
         "lang": ["swift"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_Swift",
-            "AP4_Info21 v2.0 Web_Swift ",
-            "AP3_SpecialtyCoffee_Swift"
+            {"projectId": 72027, "projectName": "AP6_RetailAnalitycs v2.0 Web_Swift"},
+            {"projectId": 72010, "projectName": "AP4_Info21 v2.0 Web_Swift "},
+            {"projectId": 72168, "projectName": "AP3_SpecialtyCoffee_Swift"}
         ]
     },
     {
         "label": "AP Kotlin - II",
         "lang": ["kotlin"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_Kotlin",
-            "AP4_Info21 v2.0 Web_Kotlin ",
-            "AP3_SpecialtyCoffee_Kotlin "
+            {"projectId": 72026, "projectName": "AP6_RetailAnalitycs v2.0 Web_Kotlin"},
+            {"projectId": 72009, "projectName": "AP4_Info21 v2.0 Web_Kotlin "},
+            {"projectId": 72167, "projectName": "AP3_SpecialtyCoffee_Kotlin "}
         ]
     },
     {
         "label": "Cybersecurity",
         "lang": ["bash"],
         "projectsList":[
-            "CbS8_Crypto_symmetric",
-            "CbS7_Crypto_intro",
-            "CbS6_Windows_basics",
-            "CbS5_Linux_basics",
-            "CbS4_Networking_basics_Part 4",
-            "CbS3_Networking_basics_Part 3",
-            "CbS2_Networking_basics_Part 2",
-            "CbS1_Networking_basics_Part 1"
+            {"projectId": 71034, "projectName": "CbS8_Crypto_symmetric"},
+            {"projectId": 71035, "projectName": "CbS7_Crypto_intro"},
+            {"projectId": 71033, "projectName": "CbS6_Windows_basics"},
+            {"projectId": 71032, "projectName": "CbS5_Linux_basics"},
+            {"projectId": 71031, "projectName": "CbS4_Networking_basics_Part 4"},
+            {"projectId": 71030, "projectName": "CbS3_Networking_basics_Part 3"},
+            {"projectId": 71029, "projectName": "CbS2_Networking_basics_Part 2"},
+            {"projectId": 71028, "projectName": "CbS1_Networking_basics_Part 1"}
         ]
     },
     {
         "label": "Java Sber",
         "lang": ["java"],
         "projectsList":[
-            "Project Reliability"
+            {"projectId": 71843, "projectName": "Project Reliability"}
         ]
     },
     {
         "label": "Mobile Swift",
         "lang": ["swift"],
         "projectsList":[
-            "MS7_Test",
-            "MS6_Additional",
-            "MS5_Maps",
-            "MS4_Data storage",
-            "MS3_Networking",
-            "MS2_SwiftUI",
-            "MS1_UIKit",
-            "Mobile Swift 02",
-            "Mobile Swift 01"
+            {"projectId": 69676, "projectName": "MS7_Test"},
+            {"projectId": 69535, "projectName": "MS6_Additional"},
+            {"projectId": 69534, "projectName": "MS5_Maps"},
+            {"projectId": 69539, "projectName": "MS4_Data storage"},
+            {"projectId": 69538, "projectName": "MS3_Networking"},
+            {"projectId": 69478, "projectName": "MS2_SwiftUI"},
+            {"projectId": 69140, "projectName": "MS1_UIKit"},
+            {"projectId": 64050, "projectName": "Mobile Swift 02"},
+            {"projectId": 64049, "projectName": "Mobile Swift 01"}
         ]
     },
     {
         "label": "Mobile Kotlin",
         "lang": ["kotlin"],
         "projectsList":[
-            "MK8_Compose",
-            "MK7_Gradle",
-            "MK6_Test",
-            "MK5_OpenGL_AndroidNDK",
-            "MK4_Notification_RemoteView",
-            "MK3_CustomView_Animations",
-            "MK2_Async_operations",
-            "MK1_Activity",
-            "Mobile Kotlin 02",
-            "Mobile Kotlin 01",
-            "Mobile Kotlin 03"
+            {"projectId": 69469, "projectName": "MK8_Compose"},
+            {"projectId": 69468, "projectName": "MK7_Gradle"},
+            {"projectId": 69467, "projectName": "MK6_Test"},
+            {"projectId": 69466, "projectName": "MK5_OpenGL_AndroidNDK"},
+            {"projectId": 69465, "projectName": "MK4_Notification_RemoteView"},
+            {"projectId": 69464, "projectName": "MK3_CustomView_Animations"},
+            {"projectId": 69463, "projectName": "MK2_Async_operations"},
+            {"projectId": 69205, "projectName": "MK1_Activity"},
+            {"projectId": 64044, "projectName": "Mobile Kotlin 02"},
+            {"projectId": 64043, "projectName": "Mobile Kotlin 01"}
         ]
     },
     {
         "label": "DO - III",
         "lang": ["bash"],
         "projectsList":[
-            "DevOps. Project 14",
-            "DevOps. Project 13",
-            "DevOps. Project 12",
-            "DevOps. Project 11",
-            "DevOps. Project 10",
-            "DevOps. Project 9",
-            "DevOps. Project 8",
-            "DevOps. Project 7"
+            {"projectId": 63932, "projectName": "DevOps. Project 14"},
+            {"projectId": 63934, "projectName": "DevOps. Project 13"},
+            {"projectId": 61428, "projectName": "DevOps. Project 12"},
+            {"projectId": 61427, "projectName": "DevOps. Project 11"},
+            {"projectId": 61426, "projectName": "DevOps. Project 10"},
+            {"projectId": 61425, "projectName": "DevOps. Project 9"},
+            {"projectId": 61424, "projectName": "DevOps. Project 8"},
+            {"projectId": 61411, "projectName": "DevOps. Project 7"}
         ]
     },
     {
         "label": "Game Development - I",
         "lang": ["c#", "c++"],
         "projectsList":[
-            "Game development. Project 7",
-            "Game development. Project 6",
-            "Game development. Project 5",
-            "Game development. Project 4",
-            "Game development. Project 3",
-            "Game development. Project 2",
-            "Game development. Project 1"
+            {"projectId": 62968, "projectName": "Game development. Project 7"},
+            {"projectId": 62967, "projectName": "Game development. Project 6"},
+            {"projectId": 62966, "projectName": "Game development. Project 5"},
+            {"projectId": 62964, "projectName": "Game development. Project 4"},
+            {"projectId": 62963, "projectName": "Game development. Project 3"},
+            {"projectId": 62962, "projectName": "Game development. Project 2"},
+            {"projectId": 62961, "projectName": "Game development. Project 1"}
         ]
     },
     {
         "label": "BSA - I",
         "lang": ["analytics"],
         "projectsList":[
-            "BSA04_Domains",
-            "BSA03_HowToRequirements",
-            "BSA02_Requirements",
-            "BSA01_Stakeholders",
-            "BSA00_Decomposition"
+            {"projectId": 69544, "projectName": "BSA04_Domains"},
+            {"projectId": 69543, "projectName": "BSA03_HowToRequirements"},
+            {"projectId": 69542, "projectName": "BSA02_Requirements"},
+            {"projectId": 69541, "projectName": "BSA01_Stakeholders"},
+            {"projectId": 69540, "projectName": "BSA00_Decomposition"}
         ]
     },
     {
         "label": "BSA - II",
         "lang": ["analytics"],
         "projectsList":[
-            "BSA11_UserInterfaces",
-            "BSA10_FunctionalRequirements",
-            "BSA09_Objects_and_Roles",
-            "BSA08_UseCase",
-            "BSA07_UserStory",
-            "BSA06_BPMN",
-            "BSA05_Diagrams"
+            {"projectId": 69551, "projectName": "BSA11_UserInterfaces"},
+            {"projectId": 69550, "projectName": "BSA10_FunctionalRequirements"},
+            {"projectId": 69549, "projectName": "BSA09_Objects_and_Roles"},
+            {"projectId": 69548, "projectName": "BSA08_UseCase"},
+            {"projectId": 69547, "projectName": "BSA07_UserStory"},
+            {"projectId": 69546, "projectName": "BSA06_BPMN"},
+            {"projectId": 69545, "projectName": "BSA05_Diagrams"}
         ]
     },
     {
         "label": "BSA - III",
         "lang": ["analytics"],
         "projectsList":[
-            "BSA16_SOAP",
-            "BSA15_REST",
-            "BSA14_SystemIntegration",
-            "BSA13_RequirementsManagements",
-            "BSA12_NonfunctionalRequirements"
+            {"projectId": 69556, "projectName": "BSA16_SOAP"},
+            {"projectId": 69555, "projectName": "BSA15_REST"},
+            {"projectId": 69554, "projectName": "BSA14_SystemIntegration"},
+            {"projectId": 69553, "projectName": "BSA13_RequirementsManagements"},
+            {"projectId": 69552, "projectName": "BSA12_NonfunctionalRequirements"}
         ]
     },
     {
         "label": "Software Architecture - I",
         "lang": ["analytics"],
         "projectsList":[
-            "Software architecture. Project 6",
-            "Software architecture. Project 5",
-            "Software architecture. Project 4",
-            "Software architecture. Project 3",
-            "Software architecture. Project 2",
-            "Software architecture. Project 1"
+            {"projectId": 62829, "projectName": "Software architecture. Project 6"},
+            {"projectId": 62828, "projectName": "Software architecture. Project 5"},
+            {"projectId": 62827, "projectName": "Software architecture. Project 4"},
+            {"projectId": 62826, "projectName": "Software architecture. Project 3"},
+            {"projectId": 62825, "projectName": "Software architecture. Project 2"},
+            {"projectId": 62813, "projectName": "Software architecture. Project 1"}
         ]
     },
     {
         "label": "Backend - I",
         "lang": ["api"],
         "projectsList":[
-            "Backend. Project 6",
-            "Backend. Project 5",
-            "Backend. Project 4",
-            "Backend. Project 3",
-            "Backend. Project 2",
-            "Backend. Project 1"
+            {"projectId": 62960, "projectName": "Backend. Project 6"},
+            {"projectId": 62959, "projectName": "Backend. Project 5"},
+            {"projectId": 62958, "projectName": "Backend. Project 4"},
+            {"projectId": 62957, "projectName": "Backend. Project 3"},
+            {"projectId": 62955, "projectName": "Backend. Project 2"},
+            {"projectId": 62954, "projectName": "Backend. Project 1"}
         ]
     },
     {
         "label": "Data Science - II",
         "lang": ["python"],
         "projectsList":[
-            "DS. Project 08. Fried Eggs",
-            "DS. Project 07. Amazon",
-            "DS. Project 06. City life",
-            "DS. Project 05. Uber",
-            "DS. Project 04. Understanding customer",
-            "DS. Project 03. MySpotify",
-            "DS. Project 02. Churn prediction",
-            "DS. Project 01. Tweets"
+            {"projectId": 51490, "projectName": "DS. Project 08. Fried Eggs"},
+            {"projectId": 51491, "projectName": "DS. Project 07. Amazon"},
+            {"projectId": 51492, "projectName": "DS. Project 06. City life"},
+            {"projectId": 51489, "projectName": "DS. Project 05. Uber"},
+            {"projectId": 51488, "projectName": "DS. Project 04. Understanding customer"},
+            {"projectId": 51487, "projectName": "DS. Project 03. MySpotify"},
+            {"projectId": 51486, "projectName": "DS. Project 02. Churn prediction"},
+            {"projectId": 51485, "projectName": "DS. Project 01. Tweets"}
         ]
     },
     {
         "label": "DS in Healthcare",
         "lang": ["python"],
         "projectsList":[
-            "DS Healthcare. Project 06",
-            "DS Healthcare. Project 05",
-            "DS Healthcare. Project 04",
-            "DS Healthcare. Project 03",
-            "DS Healthcare. Project 02",
-            "DS Healthcare. Project 01 "
+            {"projectId": 27299, "projectName": "DS Healthcare. Project 06"},
+            {"projectId": 27298, "projectName": "DS Healthcare. Project 05"},
+            {"projectId": 27295, "projectName": "DS Healthcare. Project 04"},
+            {"projectId": 27292, "projectName": "DS Healthcare. Project 03"},
+            {"projectId": 27290, "projectName": "DS Healthcare. Project 02"},
+            {"projectId": 27289, "projectName": "DS Healthcare. Project 01"}
         ]
     },
     {
         "label": "Machine Learning - I",
         "lang": ["python"],
         "projectsList":[
-            "Machine learning. Project 12",
-            "Machine learning. Project 11",
-            "Machine learning. Project 10",
-            "Machine learning. Project 9",
-            "Machine learning. Project 8",
-            "Machine learning. Project 7",
-            "Machine learning. Project 6",
-            "Machine learning. Project 5",
-            "Machine learning. Project 4",
-            "Machine learning. Project 3",
-            "Machine learning. Project 2",
-            "Machine learning. Project 1"
+            {"projectId": 62404, "projectName": "Machine learning. Project 12"},
+            {"projectId": 62403, "projectName": "Machine learning. Project 11"},
+            {"projectId": 62401, "projectName": "Machine learning. Project 10"},
+            {"projectId": 62400, "projectName": "Machine learning. Project 9"},
+            {"projectId": 62399, "projectName": "Machine learning. Project 8"},
+            {"projectId": 62398, "projectName": "Machine learning. Project 7"},
+            {"projectId": 62397, "projectName": "Machine learning. Project 6"},
+            {"projectId": 62396, "projectName": "Machine learning. Project 5"},
+            {"projectId": 62395, "projectName": "Machine learning. Project 4"},
+            {"projectId": 62394, "projectName": "Machine learning. Project 3"},
+            {"projectId": 62393, "projectName": "Machine learning. Project 2"},
+            {"projectId": 62392, "projectName": "Machine learning. Project 1"}
         ]
     },
     {
         "label": "AP Java - II",
         "lang": ["java"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_Java",
-            "SmartCalc_v4.0_Web_Java",
-            "AP4_Info21 v2.0 Web_Java ",
-            "AP3_SpecialtyCoffee_Java"
+            {"projectId": 72011, "projectName": "AP6_RetailAnalitycs v2.0 Web_Java"},
+            {"projectId": 26586, "projectName": "SmartCalc_v4.0_Web_Java"},
+            {"projectId": 72005, "projectName": "AP4_Info21 v2.0 Web_Java "},
+            {"projectId": 72161, "projectName": "AP3_SpecialtyCoffee_Java"}
         ]
     },
     {
         "label": "AP Go - II",
         "lang": ["go"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_Go",
-            "SmartCalc_v4.0_Web_Go",
-            "AP4_Info21 v2.0 Web_Go",
-            "AP3_SpecialtyCoffee_Go"
+            {"projectId": 72015, "projectName": "AP6_RetailAnalitycs v2.0 Web_Go"},
+            {"projectId": 26560, "projectName": "SmartCalc_v4.0_Web_Go"},
+            {"projectId": 72007, "projectName": "AP4_Info21 v2.0 Web_Go"},
+            {"projectId": 72165, "projectName": "AP3_SpecialtyCoffee_Go"}
         ]
     },
     {
         "label": "AP Python - II",
         "lang": ["python"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_Python",
-            "SmartCalc_v4.0_Web_Python",
-            "AP4_Info21 v2.0 Web_Python ",
-            "AP3_SpecialtyCoffee_Python"
+            {"projectId": 72012, "projectName": "AP6_RetailAnalitycs v2.0 Web_Python"},
+            {"projectId": 26573, "projectName": "SmartCalc_v4.0_Web_Python"},
+            {"projectId": 72004, "projectName": "AP4_Info21 v2.0 Web_Python "},
+            {"projectId": 72160, "projectName": "AP3_SpecialtyCoffee_Python"}
         ]
     },
     {
         "label": "AP C# - II",
         "lang": ["c#"],
         "projectsList":[
-            "AP6_RetailAnalitycs v2.0 Web_C#",
-            "SmartCalc v4.0 Web C#",
-            "AP4_Info21 v2.0 Web_C#",
-            "AP3_SpecialtyCoffee_C#"
+            {"projectId": 72016, "projectName": "AP6_RetailAnalitycs v2.0 Web_C#"},
+            {"projectId": 26594, "projectName": "SmartCalc v4.0 Web C#"},
+            {"projectId": 72008, "projectName": "AP4_Info21 v2.0 Web_C#"},
+            {"projectId": 72166, "projectName": "AP3_SpecialtyCoffee_C#"}
         ]
     },
     {
         "label": "Frontend",
         "lang": ["javascript"],
         "projectsList":[
-            "Frontend. Project 8",
-            "Frontend. Project 7",
-            "Frontend. Project 6",
-            "Frontend. Project 5",
-            "Frontend. Project 4",
-            "Frontend. Project 3",
-            "Frontend. Project 2",
-            "Frontend. Project 1"
+            {"projectId": 64402, "projectName": "Frontend. Project 8"},
+            {"projectId": 51191, "projectName": "Frontend. Project 7"},
+            {"projectId": 51190, "projectName": "Frontend. Project 6"},
+            {"projectId": 51188, "projectName": "Frontend. Project 5"},
+            {"projectId": 51187, "projectName": "Frontend. Project 4"},
+            {"projectId": 51186, "projectName": "Frontend. Project 3"},
+            {"projectId": 51185, "projectName": "Frontend. Project 2"},
+            {"projectId": 51184, "projectName": "Frontend. Project 1"}
         ]
     },
     {
         "label": "CPP - III",
         "lang": ["c++"],
         "projectsList":[
-            "MonitoringSystem",
-            "PhotoLab_v1.0",
-            "MLP",
-            "3DViewer_v2.2",
-            "3DViewer_v2.1"
+            {"projectId": 26493, "projectName": "MonitoringSystem"},
+            {"projectId": 26492, "projectName": "PhotoLab_v1.0"},
+            {"projectId": 26491, "projectName": "MLP"},
+            {"projectId": 26490, "projectName": "3DViewer_v2.2"},
+            {"projectId": 26489, "projectName": "3DViewer_v2.1"}
         ]
     },
     {
         "label": "Internship",
         "lang": ["analytics"],
         "projectsList":[
-            "Internship"
+            {"projectId": 51204, "projectName": "Internship"}
         ]
     },
     {
         "label": "Career Track",
         "lang": ["analytics"],
         "projectsList":[
-            "Career track"
+            {"projectId": 116, "projectName": "Career track"}
         ]
     },
     {
         "label": "Swift Bootcamp - II Mobile",
         "lang": ["swift"],
         "projectsList":[
-            "APS1_Mobile"
+            {"projectId": 184, "projectName": "APS1_Mobile"}
         ]
     },
     {
         "label": "Swift Bootcamp - II Backend",
         "lang": ["swift"],
         "projectsList":[
-            "APS1_Backend"
+            {"projectId": 183, "projectName": "APS1_Backend"}
         ]
     },
     {
         "label": "Swift Bootcamp - I",
         "lang": ["swift"],
         "projectsList":[
-            "APS1_Bootcamp"
+            {"projectId": 173, "projectName": "APS1_Bootcamp"}
         ]
     },
     {
         "label": "Kotlin Bootcamp - II Mobile",
         "lang": ["kotlin"],
         "projectsList":[
-            "APK1_Mobile"
+            {"projectId": 182, "projectName": "APK1_Mobile"}
         ]
     },
     {
         "label": "Kotlin Bootcamp - II Backend",
         "lang": ["kotlin"],
         "projectsList":[
-            "APK1_Backend"
+            {"projectId": 181, "projectName": "APK1_Backend"}
         ]
     },
     {
         "label": "Kotlin Bootcamp - I",
         "lang": ["kotlin"],
         "projectsList":[
-            "APK1_Bootcamp"
+            {"projectId": 172, "projectName": "APK1_Bootcamp"}
         ]
     },
     {
         "label": "JS Bootcamp - II Frontend",
         "lang": ["javascript"],
         "projectsList":[
-            "APJS1_Frontend"
+            {"projectId": 186, "projectName": "APJS1_Frontend"}
         ]
     },
     {
         "label": "JS Bootcamp - II Backend",
         "lang": ["javascript"],
         "projectsList":[
-            "APJS1_Backend"
+            {"projectId": 185, "projectName": "APJS1_Backend"}
         ]
     },
     {
         "label": "JS Bootcamp - I",
         "lang": ["javascript"],
         "projectsList":[
-            "APJS1_Bootcamp"
+            {"projectId": 174, "projectName": "APJS1_Bootcamp"}
         ]
     },
     {
         "label": "Java Bootcamp - I",
         "lang": ["java"],
         "projectsList":[
-            "APJ1_Bootcamp"
+            {"projectId": 170, "projectName": "APJ1_Bootcamp"}
         ]
     },
     {
         "label": "Java Bootcamp - II Mobile",
         "lang": ["java"],
         "projectsList":[
-            "APJ1_Mobile"
+            {"projectId": 179, "projectName": "APJ1_Mobile"}
         ]
     },
     {
         "label": "Java Bootcamp - II Backend",
         "lang": ["java"],
         "projectsList":[
-            "APJ1_Backend"
+            {"projectId": 178, "projectName": "APJ1_Backend"}
         ]
     },
     {
         "label": "C# Bootcamp",
         "lang": ["c#"],
         "projectsList":[
-            "APC1_Backend",
-            "APC1_Bootcamp"
+            {"projectId": 180, "projectName": "APC1_Backend"},
+            {"projectId": 171, "projectName": "APC1_Bootcamp"}
         ]
     },
     {
         "label": "Python Bootcamp ",
         "lang": ["python"],
         "projectsList":[
-            "APP1_Backend",
-            "APP1_Bootcamp"
+            {"projectId": 175, "projectName": "APP1_Backend"},
+            {"projectId": 168, "projectName": "APP1_Bootcamp"}
         ]
     },
     {
         "label": "Algorithms Ex",
         "lang": ["swift", "kotlin", "javascript", "java", "c#", "go", "python", "c++"],
         "projectsList":[
-            "A_Ex"
+            {"projectId": 157, "projectName": "A_Ex"}
         ]
     },
     {
         "label": "Algorithms Swift",
         "lang": ["swift"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_Swift",
-            "A1_Maze_Swift"
+            {"projectId": 69128, "projectName": "A2_SimpleNavigator_v1.0_Swift"},
+            {"projectId": 69120, "projectName": "A1_Maze_Swift"}
         ]
     },
     {
         "label": "Algorithms Kotlin",
         "lang": ["kotlin"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_Kotlin",
-            "A1_Maze_Kotlin"
+            {"projectId": 69127, "projectName": "A2_SimpleNavigator_v1.0_Kotlin"},
+            {"projectId": 69119, "projectName": "A1_Maze_Kotlin"}
         ]
     },
     {
         "label": "Algorithms JavaScript",
         "lang": ["javascript"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_JavaScript",
-            "A1_Maze_JavaScript"
+            {"projectId": 69125, "projectName": "A2_SimpleNavigator_v1.0_JavaScript"},
+            {"projectId": 69117, "projectName": "A1_Maze_JavaScript"}
         ]
     },
     {
         "label": "Algoritms Java",
         "lang": ["java"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_Java",
-            "A1_Maze_Java"
+            {"projectId": 69124, "projectName": "A2_SimpleNavigator_v1.0_Java"},
+            {"projectId": 69116, "projectName": "A1_Maze_Java"}
         ]
     },
     {
         "label": "Algorithms C#",
         "lang": ["c#"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_C#",
-            "A1_Maze_C#"
+            {"projectId": 69126, "projectName": "A2_SimpleNavigator_v1.0_C#"},
+            {"projectId": 69118, "projectName": "A1_Maze_C#"}
         ]
     },
     {
         "label": "Algorithms Go",
         "lang": ["go"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_Go",
-            "A1_Maze_Go"
+            {"projectId": 69123, "projectName": "A2_SimpleNavigator_v1.0_Go"},
+            {"projectId": 69115, "projectName": "A1_Maze_Go"}
         ]
     },
     {
         "label": "Algorithms Python",
         "lang": ["python"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_Python",
-            "A1_Maze_Python"
+            {"projectId": 69122, "projectName": "A2_SimpleNavigator_v1.0_Python"},
+            {"projectId": 69114, "projectName": "A1_Maze_Python"}
         ]
     },
     {
         "label": "Algorithms CPP",
         "lang": ["c++"],
         "projectsList":[
-            "A2_SimpleNavigator_v1.0_CPP",
-            "A1_Maze_CPP"
+            {"projectId": 69121, "projectName": "A2_SimpleNavigator_v1.0_CPP"},
+            {"projectId": 69113, "projectName": "A1_Maze_CPP"}
         ]
     },
     {
         "label": "AP2 Go",
         "lang": ["go"],
         "projectsList":[
-            "AP2_BrickGame_v3.0_Go"
+            {"projectId": 69058, "projectName": "AP2_BrickGame_v3.0_Go"}
         ]
     },
     {
         "label": "AP2 Swift",
         "lang": ["swift"],
         "projectsList":[
-            "APS_Ex",
-            "AP2_BrickGame_v3.0_Swift"
+            {"projectId": 161, "projectName": "APS_Ex"},
+            {"projectId": 69061, "projectName": "AP2_BrickGame_v3.0_Swift"}
         ]
     },
     {
         "label": "AP2 Kotlin",
         "lang": ["kotlin"],
         "projectsList":[
-            "APK_Ex",
-            "AP2_BrickGame_v3.0_Kotlin"
+            {"projectId": 160, "projectName": "APK_Ex"},
+            {"projectId": 69060, "projectName": "AP2_BrickGame_v3.0_Kotlin"}
         ]
     },
     {
         "label": "AP2 JavaScript",
         "lang": ["javascript"],
         "projectsList":[
-            "APJS_Ex",
-            "AP2_BrickGame_v3.0_JavaScript"
+            {"projectId": 162, "projectName": "APJS_Ex"},
+            {"projectId": 69057, "projectName": "AP2_BrickGame_v3.0_JavaScript"}
         ]
     },
     {
         "label": "AP2 Java",
         "lang": ["java"],
         "projectsList":[
-            "APJ_Ex",
-            "AP2_BrickGame_v3.0_Java"
+            {"projectId": 158, "projectName": "APJ_Ex"},
+            {"projectId": 69056, "projectName": "AP2_BrickGame_v3.0_Java"}
         ]
     },
     {
         "label": "AP2 C#",
         "lang": ["c#"],
         "projectsList":[
-            "APC#_Ex",
-            "AP2_BrickGame_v3.0_C#"
+            {"projectId": 164, "projectName": "APC#_Ex"},
+            {"projectId": 69059, "projectName": "AP2_BrickGame_v3.0_C#"}
         ]
     },
     {
         "label": "AP2 Python",
         "lang": ["python"],
         "projectsList":[
-            "APP_Ex",
-            "AP2_BrickGame_v3.0_Python"
+            {"projectId": 163, "projectName": "APP_Ex"},
+            {"projectId": 69055, "projectName": "AP2_BrickGame_v3.0_Python"}
         ]
     },
     {
         "label": "CPP - I",
         "lang": ["c++"],
         "projectsList":[
-            "CPP_Ex",
-            "3DViewer_v2.0",
-            "CPP3_BrickGame_v2.0",
-            "s21_containers",
-            "s21_matrix+"
+            {"projectId": 154, "projectName": "CPP_Ex"},
+            {"projectId": 26488, "projectName": "3DViewer_v2.0"},
+            {"projectId": 69053, "projectName": "CPP3_BrickGame_v2.0"},
+            {"projectId": 26486, "projectName": "s21_containers"},
+            {"projectId": 26485, "projectName": "s21_matrix+"}
         ]
     },
     {
         "label": "SQL - I",
         "lang": ["sql"],
         "projectsList":[
-            "SQL_Ex",
-            "SQL1"
+            {"projectId": 159, "projectName": "SQL_Ex"},
+            {"projectId": 1, "projectName": "SQL1"}
         ]
     },
     {
         "label": "DO - I",
         "lang": ["bash"],
         "projectsList":[
-            "DO_Ex-t",
-            "DO6_CICD",
-            "DO5_SimpleDocker",
-            "DO2_Linux Network",
-            "DO1_Linux"
+            {"projectId": 68976, "projectName": "DO_Ex-t"},
+            {"projectId": 26566, "projectName": "DO6_CICD"},
+            {"projectId": 26565, "projectName": "DO5_SimpleDocker"},
+            {"projectId": 26558, "projectName": "DO2_Linux Network"},
+            {"projectId": 26557, "projectName": "DO1_Linux"}
         ]
     },
     {
         "label": "C - I",
         "lang": ["c"],
         "projectsList":[
-            "C_Ex",
-            "C7_BrickGame_v1.0",
-            "s21_matrix ",
-            "s21_decimal",
-            "s21_string+",
-            "SimpleBashUtils"
+            {"projectId": 155, "projectName": "C_Ex"},
+            {"projectId": 69052, "projectName": "C7_BrickGame_v1.0"},
+            {"projectId": 26482, "projectName": "s21_matrix "},
+            {"projectId": 26481, "projectName": "s21_decimal"},
+            {"projectId": 26477, "projectName": "s21_string+"},
+            {"projectId": 26478, "projectName": "SimpleBashUtils"}
         ]
     },
     {
         "label": "Algorithms - JS",
         "lang": ["javascript"],
         "projectsList":[
-            "A8_Algorithmic_trading_JavaScript",
-            "A7_DNA_Analyzer_JavaScript",
-            "A6_Transactions_JavaScript",
-            "A4_Crypto_JavaScript",
-            "A3_Parallels_JavaScript"
+            {"projectId": 70799, "projectName": "A8_Algorithmic_trading_JavaScript"},
+            {"projectId": 70785, "projectName": "A7_DNA_Analyzer_JavaScript"},
+            {"projectId": 70771, "projectName": "A6_Transactions_JavaScript"},
+            {"projectId": 70761, "projectName": "A4_Crypto_JavaScript"},
+            {"projectId": 70739, "projectName": "A3_Parallels_JavaScript"}
         ]
     },
     {
         "label": "Algorithms- Kotlin",
         "lang": ["kotlin"],
         "projectsList":[
-            "A8_Algorithmic_trading_Kotlin",
-            "A7_DNA_Analyzer_Kotlin",
-            "A6_Transactions_Kotlin",
-            "A4_Crypto_Kotlin",
-            "A3_Parallels_Kotlin"
+            {"projectId": 70801, "projectName": "A8_Algorithmic_trading_Kotlin"},
+            {"projectId": 70787, "projectName": "A7_DNA_Analyzer_Kotlin"},
+            {"projectId": 70773, "projectName": "A6_Transactions_Kotlin"},
+            {"projectId": 70763, "projectName": "A4_Crypto_Kotlin"},
+            {"projectId": 70741, "projectName": "A3_Parallels_Kotlin"}
         ]
     },
     {
         "label": "Algorithms - Swift",
         "lang": ["swift"],
         "projectsList":[
-            "A8_Algorithmic_trading_Swift",
-            "A7_DNA_Analyzer_Swift",
-            "A6_Transactions_Swift",
-            "A4_Crypto_Swift",
-            "A3_Parallels_Swift"
+            {"projectId": 70802, "projectName": "A8_Algorithmic_trading_Swift"},
+            {"projectId": 70788, "projectName": "A7_DNA_Analyzer_Swift"},
+            {"projectId": 70774, "projectName": "A6_Transactions_Swift"},
+            {"projectId": 70764, "projectName": "A4_Crypto_Swift"},
+            {"projectId": 70742, "projectName": "A3_Parallels_Swift"}
         ]
     },
     {
         "label": "Algorithms - C#",
         "lang": ["c#"],
         "projectsList":[
-            "A8_Algorithmic_trading_C#",
-            "A7_DNA_Analyzer_C#",
-            "A6_Transactions_C#",
-            "A4_Crypto_C#",
-            "A3_Parallels_C#"
+            {"projectId": 70800, "projectName": "A8_Algorithmic_trading_C#"},
+            {"projectId": 70786, "projectName": "A7_DNA_Analyzer_C#"},
+            {"projectId": 70772, "projectName": "A6_Transactions_C#"},
+            {"projectId": 70762, "projectName": "A4_Crypto_C#"},
+            {"projectId": 70740, "projectName": "A3_Parallels_C#"}
         ]
     },
     {
         "label": "Algorithms - Go",
         "lang": ["go"],
         "projectsList":[
-            "A8_Algorithmic_trading_Go",
-            "A7_DNA_Analyzer_Go",
-            "A6_Transactions_Go",
-            "A4_Crypto_Go",
-            "A3_Parallels_Go"
+            {"projectId": 70797, "projectName": "A8_Algorithmic_trading_Go"},
+            {"projectId": 70783, "projectName": "A7_DNA_Analyzer_Go"},
+            {"projectId": 70769, "projectName": "A6_Transactions_Go"},
+            {"projectId": 70759, "projectName": "A4_Crypto_Go"},
+            {"projectId": 70737, "projectName": "A3_Parallels_Go"}
         ]
     },
     {
         "label": "Algorithms - Java",
         "lang": ["java"],
         "projectsList":[
-            "A8_Algorithmic_trading_Java",
-            "A7_DNA_Analyzer_Java",
-            "A6_Transactions_Java",
-            "A4_Crypto_Java",
-            "A3_Parallels_Java"
+            {"projectId": 70798, "projectName": "A8_Algorithmic_trading_Java"},
+            {"projectId": 70784, "projectName": "A7_DNA_Analyzer_Java"},
+            {"projectId": 70770, "projectName": "A6_Transactions_Java"},
+            {"projectId": 70760, "projectName": "A4_Crypto_Java"},
+            {"projectId": 70738, "projectName": "A3_Parallels_Java"}
         ]
     },
     {
         "label": "Algorithms - Python",
         "lang": ["python"],
         "projectsList":[
-            "A8_Algorithmic_trading_Python",
-            "A7_DNA_Analyzer_Python",
-            "A6_Transactions_Python",
-            "A4_Crypto_Python",
-            "A3_Parallels_Python"
+            {"projectId": 70796, "projectName": "A8_Algorithmic_trading_Python"},
+            {"projectId": 70782, "projectName": "A7_DNA_Analyzer_Python"},
+            {"projectId": 70768, "projectName": "A6_Transactions_Python"},
+            {"projectId": 70758, "projectName": "A4_Crypto_Python"},
+            {"projectId": 70736, "projectName": "A3_Parallels_Python"}
         ]
     },
     {
         "label": "Algorithms - CPP",
         "lang": ["c++"],
         "projectsList":[
-            "A8_Algorithmic_trading_CPP",
-            "A7_DNA_Analyzer_CPP",
-            "A6_Transactions_CPP",
-            "A5_s21_memory_CPP",
-            "A4_Crypto_CPP",
-            "A3_Parallels_CPP"
+            {"projectId": 70795, "projectName": "A8_Algorithmic_trading_CPP"},
+            {"projectId": 70781, "projectName": "A7_DNA_Analyzer_CPP"},
+            {"projectId": 70767, "projectName": "A6_Transactions_CPP"},
+            {"projectId": 70756, "projectName": "A5_s21_memory_CPP"},
+            {"projectId": 70757, "projectName": "A4_Crypto_CPP"},
+            {"projectId": 70735, "projectName": "A3_Parallels_CPP"},
         ]
     },
     {
         "label": "Robotics",
         "lang": ["c"],
         "projectsList":[
-            "Electrical Engineering Bootcamp",
-            "ROS Bootcamp"
+            {"projectId": 117, "projectName": "Electrical Engineering Bootcamp"},
+            {"projectId": 110, "projectName": "ROS Bootcamp"}
         ]
     },
     {
         "label": "Data Science - I",
         "lang": ["python"],
         "projectsList":[
-            "Data Science Bootcamp"
+            {"projectId": 113, "projectName": "Data Science Bootcamp"}
         ]
     },
     {
         "label": "DataBases - I",
         "lang": ["sql"],
         "projectsList":[
-            "DB Bootcamp"
+            {"projectId": 109, "projectName": "DB Bootcamp"}
         ]
     },
     {
         "label": "DO - II",
         "lang": ["bash"],
         "projectsList":[
-            "DO4_LinuxMonitoring v2.0",
-            "DO3_LinuxMonitoring v1.0"
+            {"projectId": 26563, "projectName": "DO4_LinuxMonitoring v2.0"},
+            {"projectId": 26561, "projectName": "DO3_LinuxMonitoring v1.0"}
         ]
     },
     {
         "label": "C - II",
         "lang": ["c"],
         "projectsList":[
-            "3DViewer_v1.0",
-            "s21_math"
+            {"projectId": 26484, "projectName": "3DViewer_v1.0"},
+            {"projectId": 26480, "projectName": "s21_math"}
         ]
     },
     {
         "label": "SQL - II",
         "lang": ["sql"],
         "projectsList":[
-            "RetailAnalytics v1.0",
-            "Info21 v1.0"
+            {"projectId": 26585, "projectName": "RetailAnalytics v1.0"},
+            {"projectId": 26583, "projectName": "Info21 v1.0"}
         ]
     }
 ]

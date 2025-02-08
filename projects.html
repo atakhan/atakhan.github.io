@@ -108,7 +108,7 @@
             item.projectsList.forEach(project => {
                 const projectLi = document.createElement("li");
                 projectLi.classList.add("list-group-item");
-                projectLi.innerHTML = `<b>${project}</b>`;
+                projectLi.innerHTML = `<b>${project.projectId} - ${project.projectName}</b>`;
                 projectList.appendChild(projectLi);
             });
 
@@ -124,6 +124,7 @@
             container.appendChild(li);
         });
     }
+
 
     function generateLangBadges(langs) {
         return langs.map(lang => `<span class="badge bg-secondary">${lang.toUpperCase()}</span>`).join(" ");
