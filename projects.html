@@ -44,11 +44,12 @@
 
 <!-- Фильтр по языкам -->
 <div class="mb-3">
-    <label for="langFilter" class="form-label">Фильтр по языку:</label>
-    <select id="langFilter" class="form-select" onchange="applyFilter()">
-        <option value="all">Все</option>
+    <label for="langFilter" class="form-label">Фильтр по языку (можно выбрать несколько):</label>
+    <select id="langFilter" class="form-select" multiple onchange="applyFilter()">
     </select>
 </div>
+
+<button class="btn btn-warning mb-3" onclick="resetFilter()">Сбросить фильтр</button>
 
 <div class="mb-3">
     <button class="btn btn-primary me-2" onclick="expandAll()">Раскрыть все</button>
@@ -140,31 +141,32 @@
     }
 
     function applyFilter() {
-        const selectedLang = document.getElementById("langFilter").value;
+        const selectedOptions = Array.from(document.getElementById("langFilter").selectedOptions).map(opt => opt.value);
 
-        document.querySelectorAll("#treeContainer > li").forEach(li => {
+        document.querySelectorAll("#treeContainer li").forEach(li => {
             const langData = li.dataset.lang ? li.dataset.lang.split(",") : [];
-            const isVisible = selectedLang === "all" || langData.includes(selectedLang);
+            
+            // Проверяем, есть ли пересечение языков проекта с выбранными фильтрами
+            const isVisible = selectedOptions.length === 0 || selectedOptions.some(lang => langData.includes(lang));
 
             li.style.display = isVisible ? "" : "none";
 
-            // Получаем список проектов
+            // Автораскрытие списка проектов, если узел видимый
             const projectList = li.querySelector("ul");
-            const icon = li.querySelector(".node i");
-
             if (projectList) {
                 if (isVisible) {
-                    projectList.classList.remove("hidden"); // Раскрываем проекты
-                    icon.classList.remove("fa-chevron-right");
-                    icon.classList.add("fa-chevron-down");
-                } else {
-                    projectList.classList.add("hidden"); // Скрываем проекты
-                    icon.classList.remove("fa-chevron-down");
-                    icon.classList.add("fa-chevron-right");
+                    projectList.classList.remove("hidden");
                 }
             }
         });
+}
+
+    // Функция для сброса фильтра
+    function resetFilter() {
+        document.getElementById("langFilter").selectedIndex = -1; // Сбрасываем выбор
+        applyFilter(); // Применяем фильтр заново
     }
+
     loadData();
 </script>
 
