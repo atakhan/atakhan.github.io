@@ -183,10 +183,12 @@
     function applyFilter() {
         const selectedLangs = Array.from(document.querySelectorAll("#selectedFilters .badge"))
             .map(badge => badge.id.replace("badge-", ""));
-
+        
         document.querySelectorAll("#treeContainer li").forEach(li => {
             const langData = li.dataset.lang ? li.dataset.lang.split(",") : [];
             const isVisible = selectedLangs.length === 0 || selectedLangs.some(lang => langData.includes(lang));
+
+            console.log(`Проект: ${li.textContent.trim()}, Видимость: ${isVisible}`); // Проверяем, какие элементы скрываются/показываются
 
             li.style.display = isVisible ? "" : "none";
 
@@ -198,14 +200,21 @@
                     projectList.classList.remove("hidden");
                     icon.classList.remove("fa-chevron-right");
                     icon.classList.add("fa-chevron-down");
+
+                    // Показываем вложенные проекты
+                    projectList.querySelectorAll("li").forEach(project => project.style.display = "");
                 } else {
                     projectList.classList.add("hidden");
                     icon.classList.remove("fa-chevron-down");
                     icon.classList.add("fa-chevron-right");
+
+                    // Скрываем вложенные проекты
+                    projectList.querySelectorAll("li").forEach(project => project.style.display = "none");
                 }
             }
         });
     }
+
 
     function resetFilter() {
         document.getElementById("selectedFilters").innerHTML = "";
