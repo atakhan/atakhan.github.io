@@ -33,11 +33,22 @@
         .hidden {
             display: none;
         }
+        .badge {
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body class="container py-4">
 
 <h2 class="mb-3">Дерево проектов</h2>
+
+<!-- Фильтр по языкам -->
+<div class="mb-3">
+    <label for="langFilter" class="form-label">Фильтр по языку:</label>
+    <select id="langFilter" class="form-select" onchange="applyFilter()">
+        <option value="all">Все</option>
+    </select>
+</div>
 
 <div class="mb-3">
     <button class="btn btn-primary me-2" onclick="expandAll()">Раскрыть все</button>
@@ -47,25 +58,43 @@
 <ul id="treeContainer" class="tree list-group"></ul>
 
 <script>
+    let jsonData = []; // Глобальная переменная для хранения загруженных данных
+
     async function loadData() {
         try {
             const response = await fetch("data.json");
             if (!response.ok) throw new Error("Ошибка загрузки JSON");
-            const jsonData = await response.json();
+            jsonData = await response.json();
+            populateFilter(jsonData);
             createTree(jsonData, document.getElementById("treeContainer"));
         } catch (error) {
             console.error("Ошибка:", error);
         }
     }
 
+    function populateFilter(data) {
+        const langSet = new Set();
+        data.forEach(item => item.lang.forEach(lang => langSet.add(lang)));
+        
+        const filterSelect = document.getElementById("langFilter");
+        langSet.forEach(lang => {
+            const option = document.createElement("option");
+            option.value = lang;
+            option.textContent = lang.toUpperCase();
+            filterSelect.appendChild(option);
+        });
+    }
+
     function createTree(data, container) {
+        container.innerHTML = ""; // Очистка перед перерисовкой
         data.forEach(item => {
             const li = document.createElement("li");
             li.classList.add("list-group-item");
+            li.dataset.lang = item.lang.join(","); // Сохранение языков для фильтрации
 
             const node = document.createElement("span");
             node.classList.add("node");
-            node.innerHTML = `<i class="fas fa-chevron-right"></i> ${item.label}`;
+            node.innerHTML = `<i class="fas fa-chevron-right"></i> ${item.label} ${generateLangBadges(item.lang)}`;
 
             const projectList = document.createElement("ul");
             projectList.classList.add("tree", "hidden", "list-group", "ms-3", "mt-2");
@@ -73,7 +102,7 @@
             item.projectsList.forEach(project => {
                 const projectLi = document.createElement("li");
                 projectLi.classList.add("list-group-item");
-                projectLi.textContent = project;
+                projectLi.innerHTML = `<b>${project}</b>`;
                 projectList.appendChild(projectLi);
             });
 
@@ -90,10 +119,12 @@
         });
     }
 
+    function generateLangBadges(langs) {
+        return langs.map(lang => `<span class="badge bg-info text-dark">${lang.toUpperCase()}</span>`).join(" ");
+    }
+
     function expandAll() {
-        document.querySelectorAll("#treeContainer ul").forEach(ul => {
-            ul.classList.remove("hidden");
-        });
+        document.querySelectorAll("#treeContainer ul").forEach(ul => ul.classList.remove("hidden"));
         document.querySelectorAll("#treeContainer .node i").forEach(icon => {
             icon.classList.remove("fa-chevron-right");
             icon.classList.add("fa-chevron-down");
@@ -101,12 +132,21 @@
     }
 
     function collapseAll() {
-        document.querySelectorAll("#treeContainer ul").forEach(ul => {
-            ul.classList.add("hidden");
-        });
+        document.querySelectorAll("#treeContainer ul").forEach(ul => ul.classList.add("hidden"));
         document.querySelectorAll("#treeContainer .node i").forEach(icon => {
             icon.classList.remove("fa-chevron-down");
             icon.classList.add("fa-chevron-right");
+        });
+    }
+
+    function applyFilter() {
+        const selectedLang = document.getElementById("langFilter").value;
+        document.querySelectorAll("#treeContainer li").forEach(li => {
+            if (selectedLang === "all" || li.dataset.lang.includes(selectedLang)) {
+                li.style.display = "";
+            } else {
+                li.style.display = "none";
+            }
         });
     }
 
