@@ -150,9 +150,11 @@
             const isVisible = selectedOptions.length === 0 || selectedOptions.some(lang => langData.includes(lang));
 
             li.style.display = isVisible ? "" : "none";
-
+            
             // Автораскрытие списка проектов, если узел видимый
+            const icon = li.querySelector(".node i");
             const projectList = li.querySelector("ul");
+
             if (projectList) {
                 if (isVisible) {
                     projectList.classList.remove("hidden"); // Раскрываем проекты
