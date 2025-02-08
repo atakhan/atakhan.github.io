@@ -141,15 +141,25 @@
 
     function applyFilter() {
         const selectedLang = document.getElementById("langFilter").value;
+
         document.querySelectorAll("#treeContainer li").forEach(li => {
-            const langData = li.dataset.lang ? li.dataset.lang.split(",") : []; // Преобразуем строку в массив
-            if (selectedLang === "all" || langData.includes(selectedLang)) {
-                li.style.display = "";
-            } else {
-                li.style.display = "none";
+            const langData = li.dataset.lang ? li.dataset.lang.split(",") : [];
+            const isVisible = selectedLang === "all" || langData.includes(selectedLang);
+
+            li.style.display = isVisible ? "" : "none";
+
+            // Автораскрытие списков, если узел видимый
+            const projectList = li.querySelector("ul");
+            if (projectList) {
+                if (isVisible) {
+                    projectList.classList.remove("hidden");
+                } else {
+                    projectList.classList.add("hidden");
+                }
             }
         });
     }
+
 
 
     loadData();
