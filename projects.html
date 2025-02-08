@@ -39,8 +39,7 @@
 
 <!-- Кнопки управления -->
 <div class="mb-3">
-    <button class="btn btn-primary me-2" onclick="expandAll()">Раскрыть все</button>
-    <button class="btn btn-secondary" onclick="collapseAll()">Закрыть все</button>
+    <button id="toggleButton" class="btn btn-primary me-2" onclick="toggleAll()">Раскрыть все</button>
 </div>
 
 <!-- Контейнер дерева -->
@@ -168,6 +167,22 @@
         document.getElementById("selectedFilters").innerHTML = "";
         document.querySelectorAll("#langFilterDropdown input").forEach(input => input.checked = false);
         applyFilter();
+    }
+
+    let allExpanded = false; // Флаг состояния
+
+    function toggleAll() {
+        const button = document.getElementById("toggleButton");
+
+        if (allExpanded) {
+            collapseAll();
+            button.textContent = "Раскрыть все";
+        } else {
+            expandAll();
+            button.textContent = "Закрыть все";
+        }
+
+        allExpanded = !allExpanded;
     }
 
     function expandAll() {
