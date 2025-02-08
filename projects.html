@@ -4,74 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дерево проектов</title>
-    
-    <!-- Подключение Bootstrap 5 -->
+
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Подключение FontAwesome (для иконок) -->
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <style>
-        body {
-            background: #f8f9fa;
-        }
-        .tree {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-        .node {
-            cursor: pointer;
-            font-size: 18px;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-        }
-        .node i {
-            margin-right: 8px;
-            transition: 0.3s;
-        }
-        .hidden {
-            display: none;
-        }
-        .badge {
-            margin: 3px;
-            cursor: pointer;
-        }
-        .dropdown-menu {
-            max-height: 200px;
-            overflow-y: auto;
-        }
+        body { background: #f8f9fa; }
+        .tree { list-style-type: none; padding-left: 20px; }
+        .node { cursor: pointer; font-size: 18px; padding: 5px; display: flex; align-items: center; }
+        .node i { margin-right: 8px; transition: 0.3s; }
+        .hidden { display: none; }
+        .badge { margin: 3px; cursor: pointer; }
+        .dropdown-menu { max-height: 200px; overflow-y: auto; }
     </style>
 </head>
 <body class="container py-4">
 
 <h2 class="mb-3">Дерево проектов</h2>
 
-<!-- Фильтр по языкам -->
+<!-- Фильтр -->
 <div class="mb-3">
-    <label class="form-label">Фильтр по языку (можно выбрать несколько):</label>
-
+    <label class="form-label">Фильтр по языкам:</label>
     <div class="dropdown">
-        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            Выбрать технологии
-        </button>
-        <ul class="dropdown-menu" id="langFilterDropdown">
-            <!-- Чекбоксы с технологиями появятся тут -->
-        </ul>
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Выбрать технологии</button>
+        <ul class="dropdown-menu" id="langFilterDropdown"></ul>
     </div>
-
-    <!-- Бейджики с выбранными технологиями -->
     <div id="selectedFilters" class="mt-2"></div>
-
     <button class="btn btn-primary mt-2" onclick="applyFilter()">Искать</button>
     <button class="btn btn-warning mt-2" onclick="resetFilter()">Сбросить</button>
 </div>
 
+<!-- Кнопки управления -->
 <div class="mb-3">
     <button class="btn btn-primary me-2" onclick="expandAll()">Раскрыть все</button>
     <button class="btn btn-secondary" onclick="collapseAll()">Закрыть все</button>
 </div>
 
+<!-- Контейнер дерева -->
 <ul id="treeContainer" class="tree list-group"></ul>
 
 <script>
@@ -94,14 +66,11 @@
         data.forEach(item => item.lang.forEach(lang => langSet.add(lang)));
 
         const dropdown = document.getElementById("langFilterDropdown");
-        dropdown.innerHTML = ""; // Очистка списка
+        dropdown.innerHTML = "";
 
         langSet.forEach(lang => {
             const li = document.createElement("li");
-            li.innerHTML = `
-                <label class="dropdown-item">
-                    <input type="checkbox" value="${lang}" onchange="toggleBadge('${lang}')"> ${lang.toUpperCase()}
-                </label>`;
+            li.innerHTML = `<label class="dropdown-item"><input type="checkbox" value="${lang}" onchange="toggleBadge('${lang}')"> ${lang.toUpperCase()}</label>`;
             dropdown.appendChild(li);
         });
     }
@@ -111,7 +80,7 @@
         const existingBadge = document.getElementById(`badge-${lang}`);
 
         if (existingBadge) {
-            existingBadge.remove(); // Удаление бейджа, если чекбокс снят
+            existingBadge.remove();
         } else {
             const badge = document.createElement("span");
             badge.classList.add("badge", "bg-info", "text-dark");
@@ -123,7 +92,7 @@
 
     function removeBadge(lang) {
         document.getElementById(`badge-${lang}`).remove();
-        document.querySelector(`input[value="${lang}"]`).checked = false; // Снимаем чекбокс
+        document.querySelector(`input[value="${lang}"]`).checked = false;
     }
 
     function createTree(data, container) {
@@ -164,57 +133,36 @@
         return langs.map(lang => `<span class="badge bg-secondary">${lang.toUpperCase()}</span>`).join(" ");
     }
 
-    function expandAll() {
-        document.querySelectorAll("#treeContainer ul").forEach(ul => ul.classList.remove("hidden"));
-        document.querySelectorAll("#treeContainer .node i").forEach(icon => {
-            icon.classList.remove("fa-chevron-right");
-            icon.classList.add("fa-chevron-down");
-        });
-    }
-
-    function collapseAll() {
-        document.querySelectorAll("#treeContainer ul").forEach(ul => ul.classList.add("hidden"));
-        document.querySelectorAll("#treeContainer .node i").forEach(icon => {
-            icon.classList.remove("fa-chevron-down");
-            icon.classList.add("fa-chevron-right");
-        });
-    }
-
     function applyFilter() {
         const selectedLangs = Array.from(document.querySelectorAll("#selectedFilters .badge"))
             .map(badge => badge.id.replace("badge-", ""));
-        
-        document.querySelectorAll("#treeContainer li").forEach(li => {
+
+        document.querySelectorAll("#treeContainer > li").forEach(li => {
             const langData = li.dataset.lang ? li.dataset.lang.split(",") : [];
-            const isVisible = selectedLangs.length === 0 || selectedLangs.some(lang => langData.includes(lang));
-
-            console.log(`Проект: ${li.textContent.trim()}, Видимость: ${isVisible}`); // Проверяем, какие элементы скрываются/показываются
-
-            li.style.display = isVisible ? "" : "none";
-
-            const icon = li.querySelector(".node i");
             const projectList = li.querySelector("ul");
 
-            if (projectList) {
-                if (isVisible) {
-                    projectList.classList.remove("hidden");
-                    icon.classList.remove("fa-chevron-right");
-                    icon.classList.add("fa-chevron-down");
+            // Проверяем, есть ли внутри подходящие проекты
+            let hasVisibleProjects = false;
+            projectList.querySelectorAll("li").forEach(project => {
+                const projectLangs = langData; // В данном случае проекты наследуют язык контейнера
+                const isVisible = selectedLangs.length === 0 || selectedLangs.some(lang => projectLangs.includes(lang));
+                project.style.display = isVisible ? "" : "none";
+                if (isVisible) hasVisibleProjects = true;
+            });
 
-                    // Показываем вложенные проекты
-                    projectList.querySelectorAll("li").forEach(project => project.style.display = "");
-                } else {
-                    projectList.classList.add("hidden");
-                    icon.classList.remove("fa-chevron-down");
-                    icon.classList.add("fa-chevron-right");
+            // Контейнер показываем, если внутри есть хотя бы один видимый проект
+            const isVisible = selectedLangs.length === 0 || hasVisibleProjects;
+            li.style.display = isVisible ? "" : "none";
 
-                    // Скрываем вложенные проекты
-                    projectList.querySelectorAll("li").forEach(project => project.style.display = "none");
-                }
+            if (isVisible) {
+                projectList.classList.remove("hidden");
+                li.querySelector(".node i").classList.replace("fa-chevron-right", "fa-chevron-down");
+            } else {
+                projectList.classList.add("hidden");
+                li.querySelector(".node i").classList.replace("fa-chevron-down", "fa-chevron-right");
             }
         });
     }
-
 
     function resetFilter() {
         document.getElementById("selectedFilters").innerHTML = "";
@@ -222,10 +170,20 @@
         applyFilter();
     }
 
+    function expandAll() {
+        document.querySelectorAll("#treeContainer ul").forEach(ul => ul.classList.remove("hidden"));
+        document.querySelectorAll("#treeContainer .node i").forEach(icon => icon.classList.replace("fa-chevron-right", "fa-chevron-down"));
+    }
+
+    function collapseAll() {
+        document.querySelectorAll("#treeContainer ul").forEach(ul => ul.classList.add("hidden"));
+        document.querySelectorAll("#treeContainer .node i").forEach(icon => icon.classList.replace("fa-chevron-down", "fa-chevron-right"));
+    }
+
     loadData();
 </script>
 
-<!-- Подключение Bootstrap JS -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
