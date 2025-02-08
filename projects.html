@@ -142,25 +142,29 @@
     function applyFilter() {
         const selectedLang = document.getElementById("langFilter").value;
 
-        document.querySelectorAll("#treeContainer li").forEach(li => {
+        document.querySelectorAll("#treeContainer > li").forEach(li => {
             const langData = li.dataset.lang ? li.dataset.lang.split(",") : [];
             const isVisible = selectedLang === "all" || langData.includes(selectedLang);
 
             li.style.display = isVisible ? "" : "none";
 
-            // Автораскрытие списка проектов, если узел видимый
+            // Получаем список проектов
             const projectList = li.querySelector("ul");
+            const icon = li.querySelector(".node i");
+
             if (projectList) {
                 if (isVisible) {
-                    projectList.classList.remove("hidden"); // 🔥 Раскрываем проекты
+                    projectList.classList.remove("hidden"); // Раскрываем проекты
+                    icon.classList.remove("fa-chevron-right");
+                    icon.classList.add("fa-chevron-down");
+                } else {
+                    projectList.classList.add("hidden"); // Скрываем проекты
+                    icon.classList.remove("fa-chevron-down");
+                    icon.classList.add("fa-chevron-right");
                 }
             }
         });
     }
-
-
-
-
     loadData();
 </script>
 
