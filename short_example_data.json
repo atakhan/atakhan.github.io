@@ -1,0 +1,215 @@
+{
+    "data": {
+        "holyGraph": {
+            "__typename": "HolyGraphQueries",
+            "getStudentGraphTemplate": {
+                "__typename": "HolyGraphJSON",
+                "edges": [
+                    {
+                        "__typename": "HolyGraphEdge",
+                        "data": {
+                            "__typename": "HolyGraphEdgeData",
+                            "points": [],
+                            "sourceGap": 0,
+                            "targetGap": 0
+                        },
+                        "id": "reactflow__edge-31ejh731ejh7-i2a0ih-left-g05h1hg05h1h-1ijc5d-right",
+                        "source": "31ejh7",
+                        "sourceHandle": "31ejh7-i2a0ih-left",
+                        "target": "g05h1h",
+                        "targetHandle": "g05h1h-1ijc5d-right"
+                    },
+                    {
+                        "__typename": "HolyGraphEdge",
+                        "data": {
+                            "__typename": "HolyGraphEdgeData",
+                            "points": [],
+                            "sourceGap": 0,
+                            "targetGap": 0
+                        },
+                        "id": "reactflow__edge-553jg1553jg1-89fb2e-left-87a9jf87a9jf-i2dggb-right",
+                        "source": "553jg1",
+                        "sourceHandle": "553jg1-89fb2e-left",
+                        "target": "87a9jf",
+                        "targetHandle": "87a9jf-i2dggb-right"
+                    }
+                ],
+                "nodes": [
+                    {
+                        "__typename": "HolyGraphNode",
+                        "handles": [
+                            "9h0a9h-bottom",
+                            "9h0a9h-left",
+                            "9h0a9h-top",
+                            "9h0a9h-right"
+                        ],
+                        "id": "9h0a9h",
+                        "items": [
+                            {
+                                "__typename": "HolyGraphNodeItem",
+                                "childrenNodeCodes": [
+                                    "A1_Go"
+                                ],
+                                "code": "APG1_Backend",
+                                "course": {
+                                    "__typename": "HolyGraphItemCourseInfo",
+                                    "courseType": "MODULE_PROJECT",
+                                    "isMandatory": true,
+                                    "projectDescription": "Добавление базы данных в веб-приложения на языке Python. Работа с jwt авторизацией и расширение возможностей веб-приложений.",
+                                    "projectId": 177,
+                                    "projectName": "APG1_Backend",
+                                    "projectPoints": 750
+                                },
+                                "entityId": 177,
+                                "entityType": "COURSE",
+                                "goal": null,
+                                "handles": [
+                                    "9h0a9h-e46467-left",
+                                    "9h0a9h-e46467-right"
+                                ],
+                                "id": "9h0a9h-e46467",
+                                "parentNodeCodes": [
+                                    "APG1_Bootcamp"
+                                ],
+                                "skills": []
+                            },
+                            {
+                                "__typename": "HolyGraphNodeItem",
+                                "childrenNodeCodes": [
+                                    "APG1_Backend"
+                                ],
+                                "code": "APG1_Bootcamp",
+                                "course": {
+                                    "__typename": "HolyGraphItemCourseInfo",
+                                    "courseType": "INTENSIVE",
+                                    "isMandatory": true,
+                                    "projectDescription": "Основы прикладного программирования на языке Go:\n- Знакомство с основными функциями языка. \n- Разбор объектно-ориентированного программирования.\n- Разработка консольного игрового «rogue-like» приложения.",
+                                    "projectId": 169,
+                                    "projectName": "APG1_Bootcamp",
+                                    "projectPoints": 750
+                                },
+                                "entityId": 169,
+                                "entityType": "COURSE",
+                                "goal": null,
+                                "handles": [
+                                    "9h0a9h-jicd1g-left",
+                                    "9h0a9h-jicd1g-right"
+                                ],
+                                "id": "9h0a9h-jicd1g",
+                                "parentNodeCodes": [
+                                    "CPP4",
+                                    "CPP3"
+                                ],
+                                "skills": []
+                            }
+                        ],
+                        "label": "Go Bootcamp",
+                        "position": {
+                            "__typename": "HolyGraphNodePosition",
+                            "x": 1380,
+                            "y": 3180
+                        }
+                    },
+                    {
+                        "__typename": "HolyGraphNode",
+                        "handles": [
+                            "3i2dh8-top",
+                            "3i2dh8-bottom",
+                            "3i2dh8-left",
+                            "3i2dh8-right"
+                        ],
+                        "id": "3i2dh8",
+                        "items": [
+                            {
+                                "__typename": "HolyGraphNodeItem",
+                                "childrenNodeCodes": [],
+                                "code": "AP6_JS",
+                                "course": null,
+                                "entityId": 72013,
+                                "entityType": "GOAL",
+                                "goal": {
+                                    "__typename": "HolyGraphItemGoalInfo",
+                                    "goalExecutionType": "GROUP",
+                                    "isMandatory": false,
+                                    "projectDescription": "Реализовать web-интерфейс для проекта SQL3 на языке JavaScript",
+                                    "projectId": 72013,
+                                    "projectName": "AP6_RetailAnalitycs v2.0 Web_JavaScript",
+                                    "projectPoints": 500
+                                },
+                                "handles": [
+                                    "3i2dh8-f0ghg5-left",
+                                    "3i2dh8-f0ghg5-right"
+                                ],
+                                "id": "3i2dh8-f0ghg5",
+                                "parentNodeCodes": [
+                                    "AP4_JS"
+                                ],
+                                "skills": []
+                            },
+                            {
+                                "__typename": "HolyGraphNodeItem",
+                                "childrenNodeCodes": [
+                                    "AP6_JS"
+                                ],
+                                "code": "AP4_JS",
+                                "course": null,
+                                "entityId": 72006,
+                                "entityType": "GOAL",
+                                "goal": {
+                                    "__typename": "HolyGraphItemGoalInfo",
+                                    "goalExecutionType": "GROUP",
+                                    "isMandatory": true,
+                                    "projectDescription": "In this project you will have to create a web interface for the SQL2 project in JavaScript.",
+                                    "projectId": 72006,
+                                    "projectName": "AP4_Info21 v2.0 Web_JavaScript ",
+                                    "projectPoints": 600
+                                },
+                                "handles": [
+                                    "3i2dh8-56j35h-left",
+                                    "3i2dh8-56j35h-right"
+                                ],
+                                "id": "3i2dh8-56j35h",
+                                "parentNodeCodes": [
+                                    "SQL3"
+                                ],
+                                "skills": []
+                            },
+                            {
+                                "__typename": "HolyGraphNodeItem",
+                                "childrenNodeCodes": [],
+                                "code": "AP3_JS",
+                                "course": null,
+                                "entityId": 72164,
+                                "entityType": "GOAL",
+                                "goal": {
+                                    "__typename": "HolyGraphItemGoalInfo",
+                                    "goalExecutionType": "INDIVIDUAL",
+                                    "isMandatory": false,
+                                    "projectDescription": "In this project you will have to create a web messenger in JavaScript.",
+                                    "projectId": 72164,
+                                    "projectName": "AP3_SpecialtyCoffee_JavaScript",
+                                    "projectPoints": 750
+                                },
+                                "handles": [
+                                    "3i2dh8-60d907-left",
+                                    "3i2dh8-60d907-right"
+                                ],
+                                "id": "3i2dh8-60d907",
+                                "parentNodeCodes": [
+                                    "AP2_JavaScript"
+                                ],
+                                "skills": []
+                            }
+                        ],
+                        "label": "AP JavaScript - II",
+                        "position": {
+                            "__typename": "HolyGraphNodePosition",
+                            "x": 1860,
+                            "y": 1230
+                        }
+                    },
+                ]
+            }
+        }
+    }
+}
