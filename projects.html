@@ -148,17 +148,16 @@
 
             li.style.display = isVisible ? "" : "none";
 
-            // Автораскрытие списков, если узел видимый
+            // Автораскрытие списка проектов, если узел видимый
             const projectList = li.querySelector("ul");
             if (projectList) {
                 if (isVisible) {
-                    projectList.classList.remove("hidden");
-                } else {
-                    projectList.classList.add("hidden");
+                    projectList.classList.remove("hidden"); // 🔥 Раскрываем проекты
                 }
             }
         });
     }
+
 
 
 
