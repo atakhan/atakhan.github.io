@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дерево проектов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .tree {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .node {
+            cursor: pointer;
+            font-size: 18px;
+            padding: 5px;
+            transition: 0.3s;
+        }
+        .node:hover {
+            color: #007bff;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Дерево проектов</h2>
+<ul id="treeContainer" class="tree"></ul>
+
+<script>
+    async function loadData() {
+        try {
+            const response = await fetch("data.json");
+            if (!response.ok) throw new Error("Ошибка загрузки JSON");
+            const jsonData = await response.json();
+            createTree(jsonData, document.getElementById("treeContainer"));
+        } catch (error) {
+            console.error("Ошибка:", error);
+        }
+    }
+
+    function createTree(data, container) {
+        data.forEach(item => {
+            const li = document.createElement("li");
+
+            const node = document.createElement("span");
+            node.classList.add("node");
+            node.textContent = item.label;
+
+            const projectList = document.createElement("ul");
+            projectList.classList.add("tree", "hidden");
+
+            item.projectsList.forEach(project => {
+                const projectLi = document.createElement("li");
+                projectLi.textContent = project;
+                projectList.appendChild(projectLi);
+            });
+
+            node.addEventListener("click", () => {
+                projectList.classList.toggle("hidden");
+            });
+
+            li.appendChild(node);
+            li.appendChild(projectList);
+            container.appendChild(li);
+        });
+    }
+
+    loadData();
+</script>
+
+</body>
+</html>
